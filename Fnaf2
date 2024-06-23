@@ -1,0 +1,6 @@
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1
+notifSound.Volume = 0.75
+notifSound.SoundId = "rbxassetid://6913550990"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()

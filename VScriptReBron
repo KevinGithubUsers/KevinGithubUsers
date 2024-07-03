@@ -1,0 +1,259 @@
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+
+local Window = redzlib:MakeWindow({
+  Title = "VScript : Universal",
+  SubTitle = "Beta Tested",
+  SaveFolder = "testando | VScript"
+})
+
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1
+notifSound.Volume = 3
+notifSound.SoundId =  "rbxassetid://1848354536"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
+game.StarterGui:SetCore("SendNotification", {Title = "VScript", Text = "VScript Loaded!", Icon = "rbxassetid://18234477667", Duration = 5, Button1 = "Okay"})
+
+local Tab1 = Window:MakeTab({"Infinite Yield Reborn", "rbxassetid://18234477667"})
+local Tab2 = Window:MakeTab({"Commands", "rbxassetid://18234477667"})
+local Tab3 = Window:MakeTab({"Trolling Scripts", "rbxassetid://18234477667"})
+local Tab4 = Window:MakeTab({"Blox Fruit Script","rbxassetid://18234477667"})
+local Tab5 =
+Window:MakeTab({"KingLegacy  Script","rbxassetid://18234477667"})
+local Tab6 = Window:MakeTab({"Shindo life  scripts","rbxassetid://18234477667"})
+
+local Tab7 = 
+Window:MakeTab({"Mm2","rbxassetid://18234477667"})
+
+local Tab8 = 
+Window:MakeTab({"Sound","rbxassetid://18234477667"})
+
+Tab1:AddButton({"Infinite Yield", function()
+  print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/fuckusfm/infiniteyield-reborn/master/source'),true))())
+end
+})
+
+Window:SelectTab(Tab2)
+local Section = Tab2:AddSection({"Section"})
+local Paragraph = Tab2:AddParagraph({"Paragraph", "This is a Paragraph\nSecond Line"})
+
+local Number = 0
+local Button = Tab2:AddButton({"idk", function()
+  Number = Number + 1
+  Section:Set("Number : " .. tostring(Number))
+  local Dialog = Window:Dialog({
+    Title = "Tested",
+    Text = "This script is still on progres",
+    Options = {
+      {"Confirm", function()
+        
+      end},
+      {"Maybe", function()
+        
+      end},
+      {"Cancel", function()
+        
+      end}
+    }
+  })
+end})
+
+local Button = Tab2:AddButton({
+  Name = "Invisible Toggle",
+  Description = "Makes the Toggles Invisible"
+})
+
+local Toggle1 = Tab2:AddToggle({
+  Name = "idk too",
+  Description = "This is a <font color='rgb(88, 101, 242)'>Toggle</font> Example",
+  Default = false
+})
+
+local Toggle2 = Tab2:AddToggle({
+  Name = "Idk what is this do",
+  Default = true
+})
+
+Button:Callback(Toggle1.Visible)
+Button:Callback(Toggle2.Visible)
+
+Toggle1:Callback(function(Value)
+  Toggle2:Set(false)
+end)
+Toggle2:Callback(function(Value)
+  Toggle1:Set(false)
+end)
+
+Tab2:AddSlider({
+  Name = "Speeds",
+  Min = 1,
+  Max = 200,
+  Increase = 1,
+  Default = 16,
+  Callback = function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+  end
+})
+
+-- local Button = Tab2:AddButton({"Refresh Dropdown"})
+
+local Dropdown = Tab2:AddDropdown({
+  Name = "Idk",
+  Description = "Select the <font color='rgb(88, 101, 242)'>Number</font>",
+  Options = {"one", "two", "three"},
+  Default = "two",
+  Flag = "dropdown teste",
+  Callback = function(Value)
+    
+  end
+})
+
+Window:SelectTab(Tab3)
+local Section = Tab3:AddSection({"Trolls"})
+Tab3:AddButton({"FlyGui😹",
+function()
+print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Test%20FlyGui'),true))())
+end
+})
+
+Tab3:AddButton({"Noclip😎",function() print (loadstring(game:HttpGet(('https://pastebin.com/raw/qyLb1vxq'),true))())
+end
+})
+
+Tab3:AddButton({"Fling😱",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI'),true))())
+end
+})
+
+Tab3:AddButton({"Bang🤑",function() print (loadstring(game:HttpGet(('https://scriptblox.com/raw/bang-script(NSFW)_588'),true))())
+end
+})
+
+Tab3:AddButton({"TelekinesisTool😎",function()
+print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/TelekinesusVS'),true))())
+end
+})
+
+Window:SelectTab(Tab4)
+local Section = Tab4:AddSection({"Here"})
+Tab4:AddButton({"RedZhub BloxFruit",function()
+print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999'),true))())
+end
+})
+
+Tab4:AddButton({"Blox Fruit MTriet",function()
+print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua'),true))())
+end
+})
+
+Tab4:AddButton({"MinHubV2",function() print(loadstring(game:HttpGet(('https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua'),true))())
+end
+})
+
+Window:SelectTab(Tab5)
+local Section = Tab5:AddSection({"Here"})
+Tab5:AddButton({"Archub",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/ChopLoris/KL/main/main.lua'),true))())
+end
+})
+
+Tab5:AddButton({"ZeeHub",function() print (loadstring(game:HttpGet(('https://zuwz.me/Ls-Zee-Hub-KL'),true))())
+end
+})
+
+Window:SelectTab(Tab6)
+local Section = Tab6:AddSection({"Here"})
+Tab6:AddButton({"ProjectNexus",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/IkkyyDF/ProjectNexus/main/Loader.lua'),true))())
+end
+})
+
+Tab6:AddButton({"LiteHub",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua'),true))())
+end
+})
+
+Window:SelectTab(Tab7)
+local Section = Tab7:AddSection({"Here"})
+Tab7:AddButton({"Yarhm Hub",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua'),true))())
+end
+})
+
+Window:SelectTab(Tab8)
+local Section =
+Tab8:AddSection({"Here"})
+Tab8:AddButton({"BestoFriendo",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/PrestoFriendto'),true))())
+end
+})
+
+Tab8:AddButton({"ThisIsMyKingdomCome",function()
+print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Thisiskingdom'),true))())
+end
+})
+
+Tab8:AddButton({"Metamorphosis",function()
+print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Metamorphosis2'),true))())
+end
+})
+
+Tab8:AddButton({"Fnaf",function()
+print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Fnaf2'),true))())
+end
+})
+
+Tab8:AddButton({"JustALaugh",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Laugh2'),true))())
+end
+})
+
+Tab8:AddButton({"Clown",function()
+print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Aclown'),true))())
+end
+})
+
+Tab8:AddButton({"HeheheHa",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/HeheheHa'),true))())
+end
+})
+
+Tab8:AddButton({"Bricks",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Bricks'),true))())
+end
+})
+
+Tab8:AddButton({"MarioDeath",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/MarioDeath'),true))())
+end
+})
+
+Tab8:AddButton({"SamsungNotification",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Samsung'),true))())
+end
+})
+
+Tab8:AddButton({"SpongebobDissapointed",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/SpongebobDissapointed'),true))())
+end
+})
+
+Tab8:AddButton({"Stay",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Freaks'),true))())
+end
+})
+
+Tab8:AddButton({"Freaks",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/Freaks2'),true))())
+end
+})
+
+Tab8:AddButton({"IdkNameOfThisSound",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/IdontKnowAndIdk'),true))())
+end
+})
+
+Tab8:AddButton({"GigaChad",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/GigaChad'),true))())
+end
+})
+
+Tab8:AddButton({"MultipeSoundEffect",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/MultipeSoundEffect'),true))())
+end
+})
+
+Tab8:AddButton({"HeDisconnected",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/HeDisconnected'),true))())
+end
+})
+
+Tab8:AddButton({"MissionFailed",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/MissionFailed'),true))())
+end
+})
+
+Tab8:AddButton({"MetalPipe",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/MetalPipe'),true))())
+end
+})

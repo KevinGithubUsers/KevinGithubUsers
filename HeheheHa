@@ -1,0 +1,10 @@
+local url = "8156780600"
+    setclipboard(url)
+print("idk")
+
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1
+notifSound.Volume = 1.25
+notifSound.SoundId = "rbxassetid://8156780600"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()

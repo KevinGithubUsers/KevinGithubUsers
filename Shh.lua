@@ -602,14 +602,14 @@ function redzlib:MakeWindow(Configs)
     Position = UDim2.new(1, -10, 0.5),
     AnchorPoint = Vector2.new(1, 0.5),
     BackgroundTransparency = 1,
-    Image = "rbxassetid://10747384394",
+    Image = "rbxassetid://18348402356",
     AutoButtonColor = false,
     Name = "Close"
   })
   
   local MinimizeButton = SetProps(CloseButton:Clone(), {
     Position = UDim2.new(1, -35, 0.5),
-    Image = "rbxassetid://10734896206",
+    Image = "rbxassetid://18348402356",
     Name = "Minimize"
   })
   
@@ -637,13 +637,13 @@ function redzlib:MakeWindow(Configs)
     WaitClick = true
     
     if Minimized then
-      MinimizeButton.Image = "rbxassetid://10734896206"
+      MinimizeButton.Image = "rbxassetid://18348402356"
       CreateTween({MainFrame, "Size", SaveSize, 0.25, true})
       ControlSize1.Visible = true
       ControlSize2.Visible = true
       Minimized = false
     else
-      MinimizeButton.Image = "rbxassetid://10734924532"
+      MinimizeButton.Image = "rbxassetid://18348402356"
       SaveSize = MainFrame.Size
       ControlSize1.Visible = false
       ControlSize2.Visible = false
@@ -1002,7 +1002,7 @@ function redzlib:MakeWindow(Configs)
         Position = UDim2.new(1, -10, 0.5),
         AnchorPoint = Vector2.new(1, 0.5),
         BackgroundTransparency = 1,
-        Image = "rbxassetid://10709791437"
+        Image = "rbxassetid://18348402356"
       })
       
       Button.Activated:Connect(function()task.spawn(Callback, "Click")
@@ -1173,7 +1173,7 @@ function redzlib:MakeWindow(Configs)
         Size = UDim2.new(0, 15, 0, 15),
         Position = UDim2.new(0, -5, 0.5),
         AnchorPoint = Vector2.new(1, 0.5),
-        Image = "rbxassetid://10709791523",
+        Image = "rbxassetid://18348402356",
         BackgroundTransparency = 1
       })
       
@@ -1222,7 +1222,7 @@ function redzlib:MakeWindow(Configs)
         CreateTween({Arrow, "Rotation", 0, 0.2})
         CreateTween({DropFrame, "Size", UDim2.new(0, 152, 0, 0), 0.2, true})
         CreateTween({Arrow, "ImageColor3", Color3.fromRGB(255, 255, 255), 0.2})
-        Arrow.Image = "rbxassetid://10709791523"
+        Arrow.Image = "rbxassetid://18348402356"
         NoClickFrame.Visible = false
         WaitClick = false
       end
@@ -1249,13 +1249,13 @@ function redzlib:MakeWindow(Configs)
         if WaitClick then return end
         WaitClick = true
         if NoClickFrame.Visible then
-          Arrow.Image = "rbxassetid://10709791523"
+          Arrow.Image = "rbxassetid://18348402356"
           CreateTween({Arrow, "ImageColor3", Color3.fromRGB(255, 255, 255), 0.2})
           CreateTween({DropFrame, "Size", UDim2.new(0, 152, 0, 0), 0.2, true})
           NoClickFrame.Visible = false
         else
           NoClickFrame.Visible = true
-          Arrow.Image = "rbxassetid://10709790948"
+          Arrow.Image = "rbxassetid://18348402356"
           CreateTween({Arrow, "ImageColor3", Theme["Color Theme"], 0.2})
           CreateTween({DropFrame, "Size", GetFrameSize(), 0.2, true})
         end

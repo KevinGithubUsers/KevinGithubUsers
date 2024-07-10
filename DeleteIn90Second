@@ -96,9 +96,6 @@ end
 end
 end)
 
-            
- function equip() pcall(function() for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do if v.Name == _G.SelectWeapon then game.Players.LocalPlayer.Character.Humanoid:EquipTool(v) end end end) end
-
 CheckQuest()
             repeat totarget(CFrameQuest) wait() until _G.StopTween == true or not _G.AutoFarm or (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQuest.Position).Magnitude <= 20
             wait(0.9)
@@ -107,6 +104,4 @@ CheckQuest()
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", QuestName, QuestNumber)
             end
           
-local vu = game:GetService("VirtualUser") game:GetService("Players").LocalPlayer.Idled:connect(function() vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame) wait(1) vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame) end)
- 
 function bring2() local plr = game.Players.LocalPlayer pcall(function() sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge) end) end spawn(function() while wait(.1) do if _G.AutoFarm then bring2() end end end)

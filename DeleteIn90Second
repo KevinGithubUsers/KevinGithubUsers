@@ -2,7 +2,7 @@ local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzH
 
 local Window = redzlib:MakeWindow({
 Title = "VScript : BloxFruits",
-SubTitle = "SEA 3",
+SubTitle = "SEA 1",
 SaveFolder = "BloxFruit | VScript"
 })
 
@@ -38,15 +38,16 @@ CheckQuest() function EquipWeapon(ToolSe) if game.Players.LocalPlayer.Backpack:F
 Tab1:AddButton({"ServerHop",function() print(loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/ServerHop'),true))())
 end})
 
-Tab1:AddToggle({"Auto Farm", _G.AutoFarm, function(v) _G.AutoFarm = v _G.FastAttack = v _G.Main = v end})
+Window:SelectTab(Tab2)
+Tab2:AddToggle({"Auto Farm", _G.AutoFarm, function(v) _G.AutoFarm = v _G.FastAttack = v _G.Main = v end})
 
-Tab1:AddToggle({"Auto Quest", false, function(v) AutoQuest = v end})
+Tab2:AddToggle({"Auto Quest", false, function(v) AutoQuest = v end})
 
 spawn(function() while wait() do if _G.AutoFarm then autofarm() end end end) game:GetService("RunService").Heartbeat:Connect( function() if _G.AutoFarm then if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then end end end)
 
 local LocalPlayer = game:GetService("Players").LocalPlayer local VirtualUser = game:GetService('VirtualUser')
 
-Tab1:AddButton({"Auto Haki", false, function(value)
+Tab2:AddButton({"Auto Haki", false, function(value)
     _G.AutoHaki = v  
 end})
 
@@ -74,7 +75,7 @@ spawn(function() game:GetService('RunService').Heartbeat:connect(function() if _
 
 spawn(function() for i = 1,math,99999 do game:GetService('RunService').Heartbeat:wait() if _G.FastAttack then VirtualUser:CaptureController() VirtualUser:Button1Down(Vector2.new(1280, 672)) end end end)
 
-Tab1:AddButton({"AuraKill",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/AuraKill'),true))())
+Tab2:AddButton({"AuraKill",function() print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/AuraKill'),true))())
 end})
 
 spawn(function()

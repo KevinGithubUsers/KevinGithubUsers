@@ -98,14 +98,6 @@ end)
 
             
  function equip() pcall(function() for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do if v.Name == _G.SelectWeapon then game.Players.LocalPlayer.Character.Humanoid:EquipTool(v) end end end) end
- 
-local SelectWeapon = Tab1:AddDropdown({
-Name = "Select Weapon",
-Options = {"Melee", "Sword", "Fruit"},
-Callback = function(v) _G.SelectWeapon = v _G.SelectToolWeaponOld = v end})
-Tab1:AddButton("Refresh Weapon", function()
-    SelectWeapon:Clear()
-   end)
 
 CheckQuest()
             repeat totarget(CFrameQuest) wait() until _G.StopTween == true or not _G.AutoFarm or (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQuest.Position).Magnitude <= 20

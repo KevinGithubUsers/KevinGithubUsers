@@ -11,8 +11,8 @@ wait(1)
 
 
 if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
-local library = loadstring(game:HttpGet("https://github.com/KevinGithubUsers/KevinGithubUsers/blob/main/KevinHVXEBHUB.txt"))()
-local venyx = library.new("VScript | Bloxfruit","18234477667")
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/KevinHVXEBHUB.txt"))()
+local venyx = library.new("VScript | Bloxfruit", 18234477667)
 
 local themes = {
     Background = Color3.fromRGB(24, 24, 24),

@@ -2370,10 +2370,7 @@ local posY = 60
 local posZ = 0
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
-    Tabs.Main:AddParagraph({
-        Title = "Farming",
-        Content = "Auto Farm"
-    })
+    Main:AddParagraph({"Farming","AutoFarm"})
 
     local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
         Title = "Dropdown",
@@ -2426,7 +2423,7 @@ local posZ = 0
     end)
 
 
-    local ToggleAutoFarmLevel = Tabs.Main:AddToggle("ToggleAutoFarmLevel", {Title = "Auto Farm Level", Default = false })
+    local ToggleAutoFarmLevel = Main:AddToggle({"Auto Farm Level", Default = false })
     ToggleAutoFarmLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)
@@ -2492,7 +2489,7 @@ local posZ = 0
         game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
     end
 
-    local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "Auto Near Mob", Default = false })
+    local ToggleMobAura = Main:AddToggle("ToggleMobAura", {Title = "Auto Near Mob", Default = false })
     ToggleMobAura:OnChanged(function(Value)
         _G.AutoNear = Value
     end)

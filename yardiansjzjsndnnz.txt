@@ -1166,6 +1166,4 @@ local DropdownSelectWeapon = Tab1:AddDropdown({
         game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
     end
 
-   Tab2:AddButton({"RangeHitbox", function()
-print (loadstring(game:HttpGet('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/RangeAttack'),true))())
-end})
+  

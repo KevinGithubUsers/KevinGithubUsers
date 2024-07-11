@@ -2372,8 +2372,8 @@ local posZ = 0
 --Create Tabs
     Main:AddParagraph({"Farming","AutoFarm"})
 
-    local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
-        Title = "Dropdown",
+    local DropdownSelectWeapon = Main:AddDropdown("DropdownSelectWeapon", {
+        Title = "SelectWeapon",
         Values = {'Melee','Sword','Blox Fruit'},
         Multi = false,
         Default = 1,

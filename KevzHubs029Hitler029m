@@ -2363,8 +2363,6 @@ local function YTZCAJC_fake_script()
 	end)
 end
 coroutine.wrap(YTZCAJC_fake_script)()
---------------------------------------------------------------------------------------------------------------------------------------------
--- Hehe
 local posX = 0
 local posY = 60
 local posZ = 0
@@ -2419,7 +2417,7 @@ local posZ = 0
                     end
                 end
             end)
-        end)
+        end
     end)
 
     local ToggleAutoFarmLevel = Tab1:AddToggle({"Auto Farm Level", Default = false })

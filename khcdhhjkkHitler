@@ -1063,8 +1063,8 @@ local posZ = 0
         end
     end)
 
-
-    local ToggleAutoFarmLevel = Tab1:AddToggle({
+Window:SelectTab(Tab2)
+    local ToggleAutoFarmLevel = Tab2:AddToggle({
      Name = "Auto Farm Level", 
 Default = false 
 })
@@ -1133,7 +1133,7 @@ Default = false
         game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
     end
 
-    local ToggleMobAura = Tab1:AddToggle({
+    local ToggleMobAura = Tab2:AddToggle({
      Name = "Auto Near Mob", 
      Default = false 
 })

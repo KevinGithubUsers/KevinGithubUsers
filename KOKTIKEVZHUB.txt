@@ -2370,15 +2370,14 @@ local posY = 60
 local posZ = 0
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
-    Main:AddParagraph({"Farming","AutoFarm"})
 
     local DropdownSelectWeapon = Main:AddDropdown("DropdownSelectWeapon", {
-        Title = "SelectWeapon",
-        Values = {'Melee','Sword','Blox Fruit'},
+        Namw = "SelectWeapon",
+        Options = {'Melee','Sword','Blox Fruit'},
         Multi = false,
         Default = 1,
     })
-    DropdownSelectWeapon:SetValue('Melee')
+    DropdownSelectWeapon:SetOptions('Melee')
     DropdownSelectWeapon:OnChanged(function(Value)
         ChooseWeapon = Value
     end)

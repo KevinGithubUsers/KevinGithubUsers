@@ -1052,6 +1052,7 @@ MPos = CFrame.new(-13545,470,-6917)
 SP = "Default"
 end
 end
+end
 
 local DropdownSelectWeapon = Tab1:AddDropdown({
         Name = "SelectWeapon",

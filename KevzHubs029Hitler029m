@@ -17,8 +17,6 @@ local Tab8 = Window:MakeTab({"Race V4","rbxassetid://18234477667"})
 local Tab9 = Window:MakeTab({"Shop", "rbxassetid://18234477667"})
 local Tab10 = Window:MakeTab({"Misc","rbxassetid://18234477667"})
 
-local Options = Fluent.Options
-
 do
 
     repeat wait() until game.Players

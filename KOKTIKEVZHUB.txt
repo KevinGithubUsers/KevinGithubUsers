@@ -2372,7 +2372,7 @@ local posZ = 0
 --Create Tabs
 
     local DropdownSelectWeapon = Main:AddDropdown("DropdownSelectWeapon", {
-        Namw = "SelectWeapon",
+        Name = "SelectWeapon",
         Options = {'Melee','Sword','Blox Fruit'},
         Multi = false,
         Default = 1,

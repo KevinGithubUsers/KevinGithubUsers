@@ -1002,15 +1002,10 @@ local function YTZCAJC_fake_script()
 	end)
 end
 coroutine.wrap(YTZCAJC_fake_script)()
---------------------------------------------------------------------------------------------------------------------------------------------
--- Hehe
+
 local posX = 0
 local posY = 60
 local posZ = 0
---------------------------------------------------------------------------------------------------------------------------------------------
---Create Tabs
-    Tab1:AddParagraph({"Farming","Auto Farm"
-    })
 
     local DropdownSelectWeapon = Tab1:AddDropdown({
         Name = "Dropdown",
@@ -1063,10 +1058,7 @@ local posZ = 0
         end
     end)
 
-
-Window:SelectTab(Tab2)
-
-    local ToggleAutoFarmLevel = Tab2:AddToggle({"Auto Farm Level", Default = false })
+    local ToggleAutoFarmLevel = Tab1:AddToggle({"Auto Farm Level", Default = false })
     ToggleAutoFarmLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)
@@ -1132,7 +1124,7 @@ Window:SelectTab(Tab2)
         game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
     end
 
-    local ToggleMobAura = Tab2:AddToggle({"Auto Near Mob", Default = false })
+    local ToggleMobAura = Tab1:AddToggle({"Auto Near Mob", Default = false })
     ToggleMobAura:OnChanged(function(Value)
         _G.AutoNear = Value
     end)

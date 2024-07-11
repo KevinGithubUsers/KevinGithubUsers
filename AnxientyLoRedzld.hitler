@@ -1098,9 +1098,7 @@ local DropdownSelectWeapon = Tab1:AddDropdown({
                             end
                         end
                     end
-                end
-            end
-        end)
+                end)
     end)
 
     local ToggleAutoFarmLevel = Tab1:AddToggle({"Auto Farm Level", Default = false })

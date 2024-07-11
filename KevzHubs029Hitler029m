@@ -2299,8 +2299,8 @@ ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
 ImageButton.Size = UDim2.new(0.0627121851, 0, 0.107579626, 0)
-ImageButton.Image = "rbxassetid://16119144684"
-ImageButton.Image = "rbxassetid://16119144684"
+ImageButton.Image = "rbxassetid://18234477667"
+ImageButton.Image = "rbxassetid://18234477667"
 
 UICorner.CornerRadius = UDim.new(0, 30)
 UICorner.Parent = ImageButton
@@ -2374,13 +2374,13 @@ local posZ = 0
 
     local DropdownSelectWeapon = Tab1:AddDropdown({
         Name = "SelectWeapon",
-        Values = {'Melee','Sword','Blox Fruit'},
+        Options = {'Melee','Sword','Blox Fruit'},
         Multi = false,
         Default = 1,
     })
-    DropdownSelectWeapon:SetValue('Melee')
+    DropdownSelectWeapon:SetOptions('Melee')
     DropdownSelectWeapon:OnChanged(function(Value)
-        ChooseWeapon = Value
+        ChooseWeapon = Options
     end)
     task.spawn(function()
         while wait() do
@@ -2421,7 +2421,6 @@ local posZ = 0
             end)
         end
     end)
-
 
     local ToggleAutoFarmLevel = Tab1:AddToggle({"Auto Farm Level", Default = false })
     ToggleAutoFarmLevel:OnChanged(function(Value)

@@ -2371,14 +2371,14 @@ local posZ = 0
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
 
-    local DropdownSelectWeapon = Main:AddDropdown("DropdownSelectWeapon", {
+    local DropdownSelectWeapon = Main:AddDropdown({
         Name = "SelectWeapon",
         Options = {'Melee','Sword','Blox Fruit'},
         Multi = false,
         Default = 1,
     })
     DropdownSelectWeapon:SetOptions('Melee')
-    DropdownSelectWeapon:OnChanged(function(Value)
+    DropdownSelectWeapon:OnChanged(function(Options)
         ChooseWeapon = Value
     end)
     task.spawn(function()
@@ -2420,7 +2420,6 @@ local posZ = 0
             end)
         end
     end)
-
 
     local ToggleAutoFarmLevel = Main:AddToggle({"Auto Farm Level", Default = false })
     ToggleAutoFarmLevel:OnChanged(function(Value)

@@ -2327,7 +2327,7 @@ local function YTZCAJC_fake_script()
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
-	local dragSpeed = 0.25
+	local dragSpeed = 0.40
 	local dragStart = nil
 	local startPos = nil
 	
@@ -2421,7 +2421,9 @@ local posZ = 0
         end
     end)
 
-    local ToggleAutoFarmLevel = Main:AddToggle({"Auto Farm Level", Default = false })
+    local ToggleAutoFarmLevel = Main:AddToggle({"Auto Farm Level", 
+Description = "",
+Default = false })
     ToggleAutoFarmLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)

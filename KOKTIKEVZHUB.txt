@@ -1,29 +1,16 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+
 --------------------------------------------------------------------------------------------------------------------------------------------
-local Window = Fluent:CreateWindow({
-    Title = "KevzHubs(FriendOnly)",
-    SubTitle = "by MRVMasbro",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(450, 300),
-    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Darker",
-    MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
+local Window = redzlib:MakeWindow({
+  Title = "KevzHubs",
+  SubTitle = "BloxFruit",
+  SaveFolder = "KevzHub"
 })
-local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "rbxassetid://18436193949" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "rbxassetid://18436193949" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "rbxassetid://18436193949" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "rbxassetid://18436193949" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "rbxassetid://18436193949" }),
-    Fruit = Window:AddTab({ Title = "Devil Fruit", Icon = "rbxassetid://18436193949" }),
-    Raid = Window:AddTab({ Title = "Dungeon", Icon = "rbxassetid://18436193949" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "rbxassetid://18436193949" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "rbxassetid://18436193949" }),
-	Misc = Window:AddTab({ Title = "Misc", Icon = "rbxassetid://18436193949" }),
-}
-local Options = Fluent.Options
+local Main = Window:MakeTab({"Main","rbxassetid://18234477667"})
+local Setting = Window:MakeTab({"Setting","rbxassetid://18234477667"})
+local Stats = Window:MakeTab({"Stats","rbxassetid://18234477667"})
+local Teleport = Window:MakeTab({"Teleport","rbxassetid://18234477667"})
+local Fruit = Window:MakeTab({"Devil Fruit","rbxassetid://18234477667"})
 
 do
 --------------------------------------------------------------------------------------------------------------------------------------------

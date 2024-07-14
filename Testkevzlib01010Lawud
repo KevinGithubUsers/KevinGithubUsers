@@ -8,7 +8,7 @@ local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local PlayerMouse = Player:GetMouse()
 
-local kevzlib = {
+local redzlib = {
   Themes = {
     Darker = {
       ["Color Hub 1"] = ColorSequence.new({
@@ -1792,4 +1792,4 @@ function redzlib:MakeWindow(Configs)
   return Window
 end
 
-return kevzlib
+return redzlib

@@ -1,0 +1,95 @@
+local gameid = game.PlaceId
+	if gameid == 2753915549 then
+		First_Sea = true;
+	elseif gameid == 4442272183 then
+		Second_Sea = true;
+	elseif gameid == 7449423635 then
+		Third_Sea = true;
+	else
+		game:Shutdown()
+	end;
+
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/source.txt')))()
+
+local Window = OrionLib:MakeWindow({Name = "VScript", HidePremium = false, SaveConfig = true, ConfigFolder = ""})
+
+local Tab1 = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://18234477667",
+	PremiumOnly = false
+})
+
+function totarget(CFgo)
+local tween_s = game:service"TweenService"
+local info = TweenInfo.new((game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - CFgo.Position).Magnitude/300, Enum.EasingStyle.Linear)
+local tween, err = pcall(function()
+    tween = tween_s:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], info, {CFrame = CFgo})
+    tween:Play()
+end)
+if not tween then return err end
+end
+if Second_Sea then
+ Tab1:AddButton({Name = "StopTeleport", Callback = function() tween:Cancel() _G.StopTween = true wait() _G.StopTween = false end})
+Tab1:AddButton({Name = "Dock", Callback = function() totarget(CFrame.new(82.9490662, 18.0710983, 2834.98779)) end})
+Tab1:AddButton({Name = "Cafe", Callback = function() totarget(CFrame.new(-385.250916, 73.0458984, 297.388397)) end})
+Tab1:AddButton({Name  = "Kingdom of Rose", Callback = function() totarget(CFrame.new(-394.983521, 118.503128, 1245.8446)) end})
+Tab1:AddButton({Name = "Mansion", Callback =function() totarget(CFrame.new(-390.096313, 331.886475, 673.464966)) end})
+Tab1:AddButton({Name = "Factory", Callback = function() totarget(CFrame.new(430.42569, 210.019623, -432.504791)) end}) 
+Tab1:AddButton({Name = "Colosseum", Callback = function() totarget(CFrame.new(-1836.58191, 44.5890656, 1360.30652)) end})
+Tab1:AddButton({Name = "GraveIsland", Callback = function() totarget(CFrame.new(-5411.47607, 48.8234024, -721.272522)) end})
+Tab1:AddButton({Name = "Snow Mountain", Callback = function() totarget(CFrame.new(511.825226, 401.765198, -5380.396)) end})
+Tab1:AddButton({Name = "Cold Island", Callback = function() totarget(CFrame.new(-6026.96484, 14.7461271, -5071.96338)) end})
+Tab1:AddButton({Name = "Hot Island", Callback = function() totarget(CFrame.new(-5478.39209, 15.9775667, -5246.9126)) end})
+Tab1:AddButton({Name = "Cursed Ship", Callback = function() totarget(CFrame.new(902.059143, 124.752518, 33071.8125)) end})
+Tab1:AddButton({Name = "IceCastle", Callback = function() totarget(CFrame.new(5400.40381, 28.21698, -6236.99219)) end})
+Tab1:AddButton({Name = "Forgotten Island", Callback = function() totarget(CFrame.new(-3043.31543, 238.881271, -10191.5791)) end})
+Tab1:AddButton({Name = "Usoap Island", Callback = function() totarget(CFrame.new(4748.78857, 8.35370827, 2849.57959)) end})
+Tab1:AddButton({Name = "Pole V2 Island", Callback = function() totarget(CFrame.new(-260.358917, 49325.7031, -35259.3008)) end}) 
+Tab1:AddButton({Name = "Go back to VScript : Universal", Callback = function()
+print(loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/VScript'),true))())
+end})
+end
+if First_Sea then
+Tab1:AddButton({Name ="StopTeleport", Callback = function() tween:Cancel() _G.StopTween = true wait() _G.StopTween = false end})
+Tab1:AddButton({Name = "Start Island", Callback = function() totarget(CFrame.new(1071.2832, 16.3085976, 1426.86792)) end})
+Tab1:AddButton({Name = "Marine Start", Callback = function() totarget(CFrame.new(-2573.3374, 6.88881969, 2046.99817)) end})
+Tab1:AddButton({Name = "Middle Town", Callback = function() totarget(CFrame.new(-655.824158, 7.88708115, 1436.67908)) end})
+Tab1:AddButton({Name = "Jungle", Callback = function() totarget(CFrame.new(-1249.77222, 11.8870859, 341.356476)) end})
+Tab1:AddButton({Name = "Pirate Village", Callback = function() totarget(CFrame.new(-1122.34998, 4.78708982, 3855.91992)) end})
+Tab1:AddButton({Name = "Desert", Callback = function() totarget(CFrame.new(1094.14587, 6.47350502, 4192.88721)) end})
+Tab1:AddButton({Name = "Frozen Village", Callback = function() totarget(CFrame.new(1198.00928, 27.0074959, -1211.73376)) end}) 
+Tab1:AddButton({Name = "MarineFord", Callback = function() totarget(CFrame.new(-4505.375, 20.687294, 4260.55908)) end})
+Tab1:AddButton({Name = "Colosseum", Callback = function() totarget(CFrame.new(-1428.35474, 7.38933945, -3014.37305)) end})
+Tab1:AddButton({Name = "Sky island 1 ", Callback = function() totarget(CFrame.new(-4970.21875, 717.707275, -2622.35449)) end}) 
+Tab1:AddButton({Name = "Sky island 2 ", Callback = function() totarget(CFrame.new(-4813.0249, 903.708557, -1912.69055)) end})
+Tab1:AddButton({Name = "Sky island 3 ", Callback = function() totarget(CFrame.new(-7952.31006, 5545.52832, -320.704956)) end})
+Tab1:AddButton({Name = "Sky island 4 ", Callback = function() totarget(CFrame.new(-7793.43896, 5607.22168, -2016.58362)) end})
+Tab1:AddButton({Name = "Prison", Callback =  function() totarget(CFrame.new(4854.16455, 5.68742752, 740.194641)) end}) 
+Tab1:AddButton({Name = "Magma Village", Callback = function() totarget(CFrame.new(-5231.75879, 8.61593437, 8467.87695)) end}) 
+Tab1:AddButton({Name = "UnderWater City", Callback = function() totarget(CFrame.new(61163.8516, 11.7796879, 1819.78418)) end})
+Tab1:AddButton({Name = "Fountain City", Callback = function() totarget(CFrame.new(5132.7124, 4.53632832, 4037.8562)) end}) 
+Tab1:AddButton({Name = "FrankyHouse", Callback = function() totarget(CFrame.new(6262.72559, 71.3003616, 3998.23047)) end}) 
+Tab1:AddButton({Name = "Shank's Room", Callback = function() totarget(CFrame.new(-1442.16553, 29.8788261, -28.3547478)) end}) 
+Tab1:AddButton({Name = "Mob Island", Callback = function() totarget(CFrame.new(-2850.20068, 7.39224768, 5354.99268)) end}) 
+Tab1:AddButton({Name = "Go back to VScript : Universal", Callback = function()
+print(loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/VScript'),true))())
+end})
+end
+if Third_Sea then
+Tab1:AddButton({Name = "StopTeleport", Callback = function() tween:Cancel() _G.StopTween = true wait() _G.StopTween = false end})
+Tab1:AddButton({Name ="Port Tower", Callback = function() totarget(CFrame.new(-610.309692, 57.8323097, 6436.33594)) end})
+Tab1:AddButton({Name ="Hydra Island", Callback = function() totarget(CFrame.new(5229.99561, 603.916565, 345.154022)) end})
+Tab1:AddButton({Name = "Great Tree", Callback = function() totarget(CFrame.new(2174.94873, 28.7312393, -6728.83154)) end})
+Tab1:AddButton({Name = "Castle on the Sea",Callback = function() totarget(CFrame.new(-5477.62842, 313.794739, -2808.4585)) end})
+Tab1:AddButton({Name = "Floating Turtle", Callback = function() totarget(CFrame.new(-10919.2998, 331.788452, -8637.57227)) end})
+Tab1:AddButton({Name = "Mansion", Callback = function() totarget(CFrame.new(-12553.8125, 332.403961, -7621.91748)) end})
+Tab1:AddButton({Name = "Arena", Callback = function() totarget(CFrame.new(5220.28955, 72.8193436, -1450.86304)) end})
+Tab1:AddButton({Name = "Beautiful Pirate Domain", Callback = function() totarget(CFrame.new(5310.8095703125, 21.594484329224, 129.39053344727)) end})
+Tab1:AddButton({Name = "HauntedCastle", Callback = function() totarget(CFrame.new(-9512.3623046875, 142.13258361816, 5548.845703125)) end})
+Tab1:AddButton({Name = "Peanut Island", Callback = function() totarget(CFrame.new(-2062.67773, 38.1294556, -10287.752, -0.258864403, 0, -0.965913653, 0, 1, 0, 0.965913653, 0, -0.258864403)) end})
+Tab1:AddButton({Name = "Ice Cream Island",Callback = function() totarget(CFrame.new(-840.188477, 65.8452759, -10877.3789, -0.573598981, 0, 0.819136262, 0, 1, 0, -0.819136262, 0, -0.573598981)) end})
+Tab1:AddButton({Name = "Go back to VScript : Universal", Callback = function()
+print(loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/VScript'),true))())
+end})
+end

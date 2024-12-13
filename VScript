@@ -109,7 +109,11 @@ end
 })
 
 Tab3:AddButton({Name = "Jerk Off", Callback = function()
-print (loadstring(game:HttpGet(('https://pastefy.app/wa3v2Vgm/raw'),true))())
+print (loadstring(game:HttpGet(("https://pastefy.app/wa3v2Vgm/raw"),true))())
+print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/ButtonSoundsHitler'),true))())
+end
+})
+
 Tab4:AddButton({Name = "RedZhub BloxFruit", Callback = function()
 print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999'),true))())
 print (loadstring(game:HttpGet(('https://raw.githubusercontent.com/KevinGithubUsers/KevinGithubUsers/main/ButtonSoundsHitler'),true))())
